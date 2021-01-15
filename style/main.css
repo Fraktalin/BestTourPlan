@@ -1,0 +1,20 @@
+img {
+  max-width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Mulish', sans-serif;
+}
+button {
+	font-family: 'Nunito', sans-serif;
+}
+ol,
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
