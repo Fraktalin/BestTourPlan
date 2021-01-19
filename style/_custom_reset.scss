@@ -1,5 +1,5 @@
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 *,
 *:before,
@@ -19,6 +19,6 @@ a {
 }
 button {
 	cursor: pointer;
-  background: none;
   border: none;
+  background: $primary-color;
 }
