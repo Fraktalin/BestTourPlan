@@ -8,6 +8,7 @@ img {
 }
 body {
   font-family: $primary-font;
+  background: $third-color;
 }
 ol,
 ul {
@@ -15,6 +16,7 @@ ul {
   list-style-type: none;
 }
 a {
+  color: $primary-text-color;
   text-decoration: none;
 }
 button {
