@@ -3,7 +3,11 @@
 }
 .tabs__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.tabs__list__item {
+  margin-bottom: 30px;
 }
 .tabs__list__link--active {
   color: $primary-color;
@@ -17,20 +21,58 @@
   line-height: 30px;
   text-transform: uppercase;
 }
-.tabs__lists__top {
-  display: flex;
-  flex-direction: column;
+.tabs__lists__default-list__item {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  padding-top: 23px;
+}
+.tabs__title {
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 .tabs__lists__default-list {
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 8px 8px 8px 0px;
+  background: #fff;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 992px) {
+  .tabs__lists__default-list__item:first-child {
+    margin-right: 43px;
+  }
   .tabs__lists__default-list {
     flex-direction: row;
     flex-wrap: wrap;
   }
+}
+.tabs__list__title {
+  margin-top: 30px;
+  border-radius: 4px 4px 0px 0px;
+  padding: 16px 24px;
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  background: $secondary-color;
+  color: #fff;
+}
+.tabs__lists__default-list__item--other {
+  max-width: 168px;
+  display: inline-flex;
+  margin: 0;
+  padding-right: 10px;
+}
+.tabs__lists__default-list__item--calendar {
+  font-size: 14px;
+  line-height: 18px;
 }
 .tabs__lists__default-list__item {
   color: $primary-text-color;
@@ -44,4 +86,109 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  padding-right: 27px;
+  font-size: 16px;
+}
+.tabs__lists__default-list__item--calendar::before {
+  font-family: 'icomoon' !important;
+  speak: never;
+  content: "\e905";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  padding-right: 27px;
+  font-size: 16px;
+}
+.tabs__lists__default-list__item--bonus::before {
+  content: "";
+}
+.tabs__lists__default-list__item--bonus {
+  padding-left: 7x;
+}
+.tabs__lists__big-list {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.flex-column {
+  flex-direction: column;
+}
+.tabs__lists__big-list__item__title {
+  color: $primary-color;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+.tabs__lists__big-list__item {
+  padding-top: 38px;
+}
+@media screen and (min-width: 768px) {
+  .tabs__list {
+    justify-content: space-between;
+  }
+  .tabs__lists__big-list__item__title {
+    font-size: 12px;
+  }
+  .tabs__lists__default-list__item {
+    font-size: 10px;
+  }
+  .tabs__lists__default-list__item::before {
+    padding-right: 15px;
+  }
+  .tabs__lists__big-list {
+    border-radius: 0 0 8px 8px;
+    background: #fff;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .tabs__lists__default-list__item:first-child {
+    margin-right: 30px;
+  }
+  .tabs__lists__default-list__item:nth-child(3) {
+    margin-right: 10px;
+  }
+  .tabs__lists__default-list__item:nth-child(5) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .tabs__lists__default-list__item:first-child {
+    margin-right: 43px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tabs__lists__big-list__item__title {
+    font-size: 13px;
+  }
+  .tabs__lists__default-list__item {
+    font-size: 12px;
+  }
+  .tabs__lists__default-list__item::before {
+    padding-right: 27px;
+  }
+  .tabs__lists__default-list__item:first-child {
+    margin-right: 130px;
+  }
+  .tabs__lists__default-list__item:nth-child(3) {
+    margin-right: 90px;
+  }
+  .tabs__lists__default-list__item:nth-child(5) {
+    margin-right: 180px;
+  } 
+}
+.block-dashed {
+  padding-top: 45px;
+  background: #fff;
+}
+.dash {
+  background: #fff;
+  border: 1px dashed #E0E0E0;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }

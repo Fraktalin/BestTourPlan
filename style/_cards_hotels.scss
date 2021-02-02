@@ -1,0 +1,189 @@
+.other-packages__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 65px;
+}
+.other-packages__big-card__image {
+  max-width: 100%;
+}
+.other-packages__big-card {
+  margin-bottom: 30px;
+  border-radius: 8px;
+  background: $secondary-color;
+  display: flex;
+  flex-direction: column;
+}
+.other-packages__big-card__block {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  color: #fff;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.other-packages__block__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 27px;
+}
+.other-packages__big-card__block__plain {
+  padding: 0%;
+  margin: 0;
+  font-size: 14px;
+  line-height: 160.6%;
+}
+.other-packages__block__icons__item{
+  font-size: 12px;
+  line-height: 15px;
+  padding-bottom: 11px;
+  &:nth-child(3) {
+    &::before {
+      padding-right: 15px;
+      content: "\e90c";
+      font-family: 'icomoon' !important;
+      speak: never;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+    }
+  }
+  &:nth-child(2) {
+    &::before {
+      content: "\e913";
+      padding-right: 15px;
+      font-family: 'icomoon' !important;
+      speak: never;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+    }
+  }
+  &:first-child {
+    padding-top: 18px;
+    &::before {
+      content: "\e90e";
+      padding-right: 15px;
+      font-family: 'icomoon' !important;
+      speak: never;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+    }
+  }
+}
+.other-packages__block__price {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+}
+.other-packages__block__new-price {
+  padding-top: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+.other-packages__block__bottom-block {
+  display: flex;
+  justify-content: space-between;
+}
+.other-packages__block__bottom-block__button {
+  border-radius: 4px;
+  padding: 11px 27px;
+}
+.other-packages__small-card {
+  margin-bottom: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.other-packages__small-card__block {
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  height: 250px;
+  background: $secondary-color;
+  color: #fff;
+}
+.other-packages__block__price--big {
+  padding-top: 37px;
+}
+@media screen and (min-width: 576px) {
+  .other-packages__big-card {
+    flex-direction: row;
+  }
+  .other-packages__big-card__image {
+    max-width: 200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .other-packages__small-card {
+    flex-direction: row;
+  }
+  .other-packages__small-card__block {
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .other-packages__block__new-price {
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .other-packages__small-card__block {
+    padding-right: 21px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+  }
+  .other-packages__big-card__image {
+    max-width: 200px;
+  }
+  .other-packages__small-card {
+    flex-direction: column;
+  }
+  .other-packages__big-card__image {
+    max-width: 335px;
+  }
+  .other-packages__block__price--big {
+    padding-top: 29px;
+  }
+  .other-packages__big-card__block {
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+  }
+  .other-packages__big-card__block__plain {
+    font-size: 13px;
+    line-height: 140.6%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .other-packages__big-card__block__plain {
+    padding: 0%;
+    margin: 0;
+    font-size: 14px;
+    line-height: 160.6%;
+  }
+  .other-packages__big-card__image {
+    max-width: 366px;
+  }
+}
