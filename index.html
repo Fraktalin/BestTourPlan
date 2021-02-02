@@ -12,116 +12,192 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<div class="main-header-info">
-				<div class="container main-header-info__flex">
-					<div class="main-header-info__contact">
-					<span class="main-header-info__text">Questions? Need Help?</span>
-					<a class="main-header-info__link" href= "tel:+123456500">Call us on (+123) 456 1500</a>
+			<div class="container">
+				<div class="header-help">
+					<div class="header-info">
+						<span class="header-info__text">Questions? Need Help?</span>
+						<a href="tel +1234561500" class="header-info__tel">Call us on (+123) 456 1500</a>
 					</div>
-					<div class="main-header-info__other">
-						<a class="main-header-info__other__link" href="/">
-							<span class="icon-gift main-header__other__icon"></span>
-							<span class="main-header__other__text">BTP Gift Card</span>
+					<div class="header-gifts">
+						<a class="header-gifts__link" href="">
+							<span class="icon-gift"></span>
+							<span class="header-gifts__text">BTP Gift Card</span>
 						</a>
-						<a class="main-header-info__other__link" href="/">
-							<span class="icon-empty-star main-header__other__icon"></span>
-							<span class="main-header__other__text">Loyalty Program</span>
+						<a href="">
+							<span class="icon-empty-star">
+								<span class="header-gifts__text">Loyalty Program</span>
+							</span>
 						</a>
 					</div>
 				</div>
 			</div>
-			<div class="main-header-general">
+			<div class="header__second-header">
 				<div class="container">
-					<div class="row">
-						<div class="col-xl-3 col-lg-3">
-							<a href="" class="main-logo">
-								<img src="./Images/Best tour plan.png" alt="" class="main-logo__image">
-							</a>
-						</div>
-						<div class="col-xl-4 col-lg-4">
-							<form action="" class="search-form">
-								<input type="text" class="search-form__input" aria-label="search location" placeholder="Search Location">
-								<button class="search-form__button" aria-label="search">
-									<span class="icon-search"></span>
-								</button>
-							</form>
-						</div>
-						<div class="offset-2 col-xl-1 col-lg-1">
-							<a href="">
-								<div class="main-header-general__cart">
-									<span class="icon-shopping-cart"></span>
-									<div class="main-header-general__cart--count">2</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-xl-2 col-lg-2">
-							<a href="">
+					<div class="header-center">
+						<img class="header-center__image" src="./Images/Best_tour_plan.svg" alt="">
+						<form class="header-center__search-form" action="">
+							<input type="text" class="search-form__input" placeholder="Search Location">
+							<button class="search-form__button">
+								<span class="icon-search"></span>
+							</button>
+						</form>
+						<div class="header-center__user">
+							<div class="cart">
+								<span class="icon-shopping-cart"></span>
+								<div class="icon-shopping-cart--count">2</div>
+							</div>
+							<a class="header-center__user__link" href="">
 								<img src="./Images/Ellipse 1.jpg" alt="">
-								<span class="main-header-general__link__name">Nathan</span>
+								<span>Nathan</span>
 								<span class="icon-arrow-down"></span>
 							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="main-nav-wrap">
+			<div class="header__last-header">
 				<div class="container">
-					<div class="main-nav">
-						<ul class="main-nav__list">
-							<li class="main-nav__list-item">
-								<a href="" class="main-nav__link"></a>
+					<nav class="last-header__main-nav">
+						<ul class="last-header__main-nav__list">
+							<li class="main-nav__list__item">
+								<a href="" class="main-nav__list__link">All Deals</a>
+							</li>
+							<li class="main-nav__list__item">
+								<a href="" class="main-nav__list__link">Hotels</a>
+							</li>
+							<li class="main-nav__list__item">
+								<a href="" class="main-nav__list__link">Activities</a>
+							</li>
+							<li class="main-nav__list__item">
+								<a href="" class="main-nav__list__link">Hotel Day Packages</a>
+							</li>
+							<li class="main-nav__list__item">
+								<a href="" class="main-nav__list__link">Restaurants</a>
+							</li>
+							<li class="main-nav__list__item">
+								<a href="" class="main-nav__list__link">Events</a>
+							</li>
+							<li class="main-nav__list__item">
+								<a href="" class="main-nav__list__link">Rodrigues</a>
 							</li>
 						</ul>
-					</div>
+					</nav>
 				</div>
 			</div>
 		</header>
-		<section class="tabs-section">
+		<section class="hero-section">
 			<div class="container">
-				<ul class="main-tabs">
-					<li class="main-tabs__list-item">
-						<button class="main-tabs__item main-tabs__item--active">Package Summary</button>
-					</li>
-					<li class="main-tabs__list-item">
-						<button class="main-tabs__item">Package Summary</button>
-					</li>
-					<li class="main-tabs__list-item">
-						<button class="main-tabs__item">Package Summary</button>
-					</li>
-					<li class="main-tabs__list-item">
-						<button class="main-tabs__item">Package Summary</button>
-					</li>
-					<li class="main-tabs__list-item">
-						<button class="main-tabs__item">Package Summary</button>
-					</li>
-					<li class="main-tabs__list-item">
-						<button class="main-tabs__item">Package Summary</button>
-					</li>
-					<li class="main-tabs__list-item">
-						<button class="main-tabs__item">Package Summary</button>
-					</li>
-				</ul>
-				<div class="main-tab">
-					<h2 class="sub-title main-tab__title">Package Summary</h2>
-					<div class="row">
-						<div class="col-lg-6">
-							<div class="info-card">
-								<h3 class="info-card__title">ph</h3>
+				<div class="hero-section__path">
+					<a href="" class="hero-section__path__link">Home / </a>
+					<a href="" class="hero-section__path__link">lash Offers / </a>
+					<a href="" class="hero-section__path__link">Grand Hilton Hotel</a>
+				</div>
+			<div class="hero-section__stars">
+				<span class="icon-star"></span>
+				<span class="icon-star"></span>
+				<span class="icon-star"></span>
+				<span class="icon-star"></span>
+				<span class="icon-star"></span>
+			</div>
+			<div class="hero-section__main-title__block">
+			<h1 class="hero-section__main-title">GRAND HILTON HOTEL</h1>
+			<button class="hero-section__main-title__button">Flash Offer</button>
+			</div>
+			<span class="hero-section__main-title__text">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</span>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-8 col-lg-8">
+					<div class="hero-section__slide">
+						<img src="./Images/main-image1x.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-lg-4 col-xl-4">
+					<div class="hero-section__right-block">
+						<div class="text-row text-row--1">
+							<div class="text-row__col">
+								<span class="text-row__col--1">price starts as</span>
+								<span class="text-row__col--2">$ 8,500</span>
+								<span class="text-row__col__block--1">per room / night</span>
 							</div>
-							<div class="row">
-								<div class="col-sm-6">
-									<ul class="plain-list">
-										<li class="plan-list__item">
-											<span class="plain-list__icon">
-												<span class="icon-check"></span>
-											</span>
-										</li>
-									</ul>
+							<div class="text-row__col">
+								<div class="text-row__col__block">
+									<div class="text-row__col__block__elem">
+										<span class="icon-user"></span>
+										<span class="text-row__col__block--1">2 x Guests</span>
+									</div>
+									<div class="text-row__col__block__elem">
+										<span class="icon-home"></span>
+										<span class="text-row__col__block--1">1 x Room</span>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6">
-							
+						<div class="text-row text-row--2">
+							<div class="text-row__col">
+								<span class="text-row__col-2--1">Quick Booking</span>
+							</div>
+							<div class="text-row__col">
+								<a href="tel: 12100" class="link-row__col-2--1"><span class="icon-phone-call"></span>12100</a>
+							</div>
+						</div>
+						<button class="hero-section__button">View Other Options</button>
+					</div>
+					<div class="hero-section__map"></div>
+					<div class="">
+						<iframe class="hero-section__map--block" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d617.0372617506115!2d30.522784433413875!3d50.45094749059778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf87e92dd057%3A0xa31051482bd99848!2z0JDQuSDQlNCwINCc0LDRgdGC0LXRgCAtINGA0LXQvNC-0L3RgiBpUGhvbmUsIGlQYWQsIE1hY0Jvb2sg0LIg0JrQuNC10LLQtQ!5e0!3m2!1sru!2sua!4v1612188078754!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+		<section class="section-tabs">
+			<div class="container">
+				<ul class="tabs__list">
+					<li class="tabs__list__item">
+						<a href="" class="tabs__list__link tabs__list__link--active">Package Summery</a>
+					</li>
+					<li class="tabs__list__item">
+						<a href="" class="tabs__list__link">Hotel Information</a>
+					</li>
+					<li class="tabs__list__item">
+						<a href="" class="tabs__list__link">Rooms</a>
+					</li>
+					<li class="tabs__list__item">
+						<a href="" class="tabs__list__link">Facilities & Activities</a>
+					</li>
+					<li class="tabs__list__item">
+						<a href="" class="tabs__list__link">Dining & Entertainment</a>
+					</li>
+					<li class="tabs__list__item">
+						<a href="" class="tabs__list__link">Reviews </a>
+					</li>
+					<li class="tabs__list__item">
+						<a href="" class="tabs__list__link">Questions & Answers</a>
+					</li>
+				</ul>
+				<h2 class="tabs__title">Package Summery</h2>
+				<div class="tabs__lists">
+					<div class="col-xl-6">
+						<div class="tabs__lists__top">
+							<span>Package Highlights</span>
+							<ul class="tabs__lists__default-list">
+								<li class="tabs__lists__default-list__item">Half Board/ All Inclusive</li>
+								<li class="tabs__lists__default-list__item">Luxurious 5-Star Hotel</li>
+								<li class="tabs__lists__default-list__item">Child Under 11 Years Stay Free</li>
+								<li class="tabs__lists__default-list__item">Banyan An Adult Only Zone</li>
+								<li class="tabs__lists__default-list__item">LUX* Me Spa</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-6">
+						<div class="tabs__lists__top">
+							<span>Package Highlights</span>
+							<ul class="tabs__lists__default-list">
+								<li class="tabs__lists__default-list__item">Half Board/ All Inclusive</li>
+								<li class="tabs__lists__default-list__item">Luxurious 5-Star Hotel</li>
+							</ul>
+							<h1>FLEX НА СПИСКИ!</h1>
 						</div>
 					</div>
 				</div>
