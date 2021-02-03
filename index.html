@@ -35,7 +35,7 @@
 				<div class="container">
 					<div class="header-center">
 						<img class="header-center__image" src="./Images/Best_tour_plan.svg" alt="">
-						<form class="header-center__search-form" action="">
+						<form class="search-form" action="">
 							<input type="text" class="search-form__input" placeholder="Search Location">
 							<button class="search-form__button">
 								<span class="icon-search"></span>
@@ -100,8 +100,17 @@
 				<span class="icon-star"></span>
 			</div>
 			<div class="hero-section__main-title__block">
-			<h1 class="hero-section__main-title">GRAND HILTON HOTEL</h1>
-			<button class="hero-section__main-title__button">Flash Offer</button>
+				<div class="hero-section__title-wrap">
+					<h1 class="hero-section__main-title">GRAND HILTON HOTEL</h1>
+					<button class="hero-section__main-title__button">Flash Offer</button>
+				</div>
+				<button class="user-rattings__button">
+					<span class="text-button">User Rattings</span>
+					<div class="user-rattings">
+						<span class="big-number">4.5/</span>
+						<span class="small-number">5</span>
+					</div>
+				</button>
 			</div>
 			<span class="hero-section__main-title__text">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</span>
 		</div>
@@ -109,7 +118,7 @@
 			<div class="row">
 				<div class="col-xl-8 col-lg-8">
 					<div class="hero-section__slide">
-						<img src="./Images/main-image1x.jpg" alt="">
+						<img class="hero-section__image" src="./Images/main-image1x.jpg" alt="">
 					</div>
 				</div>
 				<div class="col-lg-4 col-xl-4">
@@ -205,8 +214,8 @@
 					<div class="col-lg-12">
 						<div class="tabs__list__top">
 							<span class="tabs__list__title">Package Summery Details</span>
-							<ul class="tabs__lists__big-list">
-								<li class="tabs__lists__big-list__item">
+							<ul class="row tabs__lists__big-list">
+								<li class="col-lg-4 tabs__lists__big-list__item">
 									<span class="tabs__lists__big-list__item__title">Purchase Inclusions</span>
 									<ul class="tabs__lists__default-list flex-column">
 										<li class="tabs__lists__default-list__item">Room as per selection</li>
@@ -217,7 +226,7 @@
 										<li class="tabs__lists__default-list__item">Free Secure Parking</li>
 									</ul>
 								</li>
-								<li class="tabs__lists__big-list__item">
+								<li class="col-lg-4 tabs__lists__big-list__item">
 									<span class="tabs__lists__big-list__item__title">Complimentary Land Based Activities</span>
 									<ul class="tabs__lists__default-list flex-column">
 										<li class="tabs__lists__default-list__item">Gym</li>
@@ -228,7 +237,7 @@
 										<li class="tabs__lists__default-list__item">Unlimited access to driving range</li>
 									</ul>
 								</li>
-								<li class="tabs__lists__big-list__item">
+								<li class="col-lg-4 tabs__lists__big-list__item">
 									<span class="tabs__lists__big-list__item__title">Complimentary Water Based Activities</span>
 									<ul class="tabs__lists__default-list flex-column">
 										<li class="tabs__lists__default-list__item">Water skiing</li>
@@ -249,22 +258,22 @@
 						<div class="dash"></div>
 						</div>
 						<div class="tabs__list__top">
-							<ul class="tabs__lists__big-list">
-								<li class="tabs__lists__big-list__item">
+							<ul class="row tabs__lists__big-list">
+								<li class="col-lg-4 tabs__lists__big-list__item">
 									<span class="tabs__lists__big-list__item__title">Meal Plan Available</span>
 									<ul class="tabs__lists__default-list flex-column">
 										<li class="tabs__lists__default-list__item">Half Board</li>
 										<li class="tabs__lists__default-list__item">All Inclusive</li>
 									</ul>
 								</li>
-								<li class="tabs__lists__big-list__item">
+								<li class="col-lg-4 tabs__lists__big-list__item">
 									<span class="tabs__lists__big-list__item__title">Entertainment</span>
 									<ul class="tabs__lists__default-list flex-column">
 										<li class="tabs__lists__default-list__item">Live music</li>
 										<li class="tabs__lists__default-list__item">DJ & Mauritian Dance Show</li>
 									</ul>
 								</li>
-								<li class="tabs__lists__big-list__item">
+								<li class="col-lg-4 tabs__lists__big-list__item">
 									<span class="tabs__lists__big-list__item__title">Check In & Check Out</span>
 									<ul class="tabs__lists__default-list flex-column">
 										<li class="tabs__lists__default-list__item">Check In Time 14:00</li>
@@ -283,6 +292,7 @@
 				<div class="row">
 					<div class="col-sm-12 col-md-12 col-xl-8 col-lg-8">
 						<div class="other-packages__big-card">
+							<button class="big-card__button-offer">Flash Offer</button>
 							<img class="other-packages__big-card__image" src="./Images/other-packages-image1-1x.jpg" alt="">
 							<div class="other-packages__big-card__block">
 								<div class="other-packages__big-card__block__stars">
@@ -304,13 +314,14 @@
 								<span class="other-packages__block__price other-packages__block__price--big">$ 10,500</span>
 								<div class="other-packages__block__bottom-block ">
 									<span class="other-packages__block__new-price">$ 8,500</span>
-									<button class="other-packages__block__bottom-block__button">Book Now</button>
+									<button class="block__button">Book Now</button>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-12 col-lg-4 col-xl-4">
 						<div class="other-packages__small-card">
+							<button class="big-card__button-offer">Flash Offer</button>
 							<img src="./Images/other-packages-image2-1x.jpg" alt="">
 							<div class="other-packages__small-card__block">
 								<span class="other-packages__block__title">LUX* Belle Mare</span>
@@ -322,7 +333,7 @@
 								<span class="other-packages__block__price">$ 10,500</span>
 								<div class="other-packages__block__bottom-block">
 									<span class="other-packages__block__new-price">$ 8,500</span>
-									<button class="other-packages__block__bottom-block__button">Book Now</button>
+									<button class="block__button">Book Now</button>
 								</div>
 							</div>
 						</div>
@@ -331,6 +342,7 @@
 				<div class="row">
 					<div class="col-md-12 col-lg-4 col-xl-4">
 						<div class="other-packages__small-card">
+							<button class="big-card__button-offer">Flash Offer</button>
 							<img src="./Images/other-packages-image3-1x.jpg" alt="">
 							<div class="other-packages__small-card__block">
 								<span class="other-packages__block__title">White Palace</span>
@@ -342,13 +354,14 @@
 								<span class="other-packages__block__price">$ 10,500</span>
 								<div class="other-packages__block__bottom-block">
 									<span class="other-packages__block__new-price">$ 9,500</span>
-									<button class="other-packages__block__bottom-block__button">Book Now</button>
+									<button class="block__button">Book Now</button>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-12 col-lg-4 col-xl-4">
 						<div class="other-packages__small-card">
+							<button class="big-card__button-offer">Flash Offer</button>
 							<img src="./Images/other-packages-image4-1x.jpg" alt="">
 							<div class="other-packages__small-card__block">
 								<span class="other-packages__block__title">Luxury Place</span>
@@ -360,13 +373,14 @@
 								<span class="other-packages__block__price">$ 4,500</span>
 								<div class="other-packages__block__bottom-block">
 									<span class="other-packages__block__new-price">$ 2,500</span>
-									<button class="other-packages__block__bottom-block__button">Book Now</button>
+									<button class="block__button">Book Now</button>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-12 col-lg-4 col-xl-4">
 						<div class="other-packages__small-card">
+							<button class="big-card__button-offer">Flash Offer</button>
 							<img src="./Images/other-packages-image5-1x.jpg" alt="">
 							<div class="other-packages__small-card__block">
 								<span class="other-packages__block__title">Hotel Five Star</span>
@@ -378,7 +392,7 @@
 								<span class="other-packages__block__price">$ 6,500</span>
 								<div class="other-packages__block__bottom-block">
 									<span class="other-packages__block__new-price">$ 3,500</span>
-									<button class="other-packages__block__bottom-block__button">Book Now</button>
+									<button class="block__button">Book Now</button>
 								</div>
 							</div>
 						</div>
@@ -386,5 +400,176 @@
 				</div>
 			</div>
 		</section>
+		<section class="slider">
+			<div class="container">
+				<h4 class="slider__title">What people thinks about us</h4>
+				<div class="slider__part">
+					<button class="slider__arrow">
+						<span class="icon-arrow-left"></span>
+					</button>
+					<div class="slider__block">
+						<img class="slider__photo" src="./Images/avatar2.png" alt="">
+						<span class="slider__name">Megan Fox</span>
+						<span class="slider__date">Stayed 18 Nov, 2019</span>
+						<div class="hero-section__stars">
+							<span class="icon-star"></span>
+							<span class="icon-star"></span>
+							<span class="icon-star"></span>
+							<span class="icon-star"></span>
+							<span class="icon-star"></span>
+						</div>
+						<p class="slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. </p>
+					</div>
+					<button class="slider__arrow">
+						<span class="icon-arrow-right"></span>
+					</button>
+				</div>
+			</div>
+		</section>
+		<section class="subscribe">
+			<div class="subscribe__image">
+				<div class="container">
+					<div class="subscribe__block">
+						<div class="subscribe__text">
+							<span class="subscribe__block__text">subscribe to our</span>
+							<span class="subscribe__block__newsletter">Newsletter</span>
+						</div>
+						<form class="search-form--subscribe" action="">
+							<input type="text" class="search-form__input search-form__input--subscribe" placeholder="Your email address">
+							<button class="search-form__button search-form__button--subscribe">
+								<span class="">Send</span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="other-activities">
+			<div class="container">
+				<h4 class="other-activities__title">Other Activities</h4>
+				<div class="row">
+					<div class="other-activities__block col-sm-6 col-md-6 col-lg-6 col-xl-3">
+						<div class="image-wrapper">
+							<img class="other-activities__image" src="./Images/other-activities1-1x.jpg" alt="">
+						</div>
+						<div class="other-activities__block-elements">
+							<span class="block__text">The curious corner of chamarel</span>
+							<button class="block__button block__button--activities">Book Now</button>
+						</div>
+					</div>
+					<div class="other-activities__block col-sm-6 col-md-6 col-lg-6 col-xl-3">
+						<div class="image-wrapper">
+							<img class="other-activities__image" src="./Images/other-activities2-1x.jpg" alt="">
+						</div>
+						<div class="other-activities__block-elements">
+							<span class="block__text">Gymkhana club golf course</span>
+							<button class="block__button block__button--activities">Book Now</button>
+						</div>
+					</div>
+					<div class="other-activities__block col-sm-6 col-md-6 col-lg-6 col-xl-3">
+						<div class="image-wrapper">
+							<img class="other-activities__image" src="./Images/other-activities3-1x.jpg" alt="">
+						</div>
+						<div class="other-activities__block-elements">
+							<span class="block__text">Tamarind falls hikingtrip - full day</span>
+							<button class="block__button block__button--activities">Book Now</button>
+						</div>
+					</div>
+					<div class="other-activities__block col-sm-6 col-md-6 col-lg-6 col-xl-3">
+						<div class="image-wrapper">
+							<img class="other-activities__image" src="./Images/other-activities4-1x.jpg" alt="">
+						</div>
+						<div class="other-activities__block-elements">
+							<span class="block__text">The blue marine discovery quest</span>
+							<button class="block__button block__button--activities">Book Now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="main-footer">
+			<div class="container">
+				<div class="footer-top row">
+					<div class="col-sm-6 col-md-5 offset-md-1 col-lg-2 col-xl-2">
+						<img class="footer-logo" src="./Images/Best-tour-plan-footer.svg" alt="">
+					</div>
+					<div class="col-sm-6 col-md-5 offset-md-1 col-lg-2 col-xl-2 offset-lg-1 offset-xl-1">
+						<h5 class="footer-title">ALL CATEGORIES</h5>
+						<ul class="footer-list">
+							<li class="footer-list__item">
+								<a href="" class="footer-list__link">All Deals</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="" class="footer-list__link">Hotels</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="" class="footer-list__link">Activities</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="" class="footer-list__link">Spa Packages</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="" class="footer-list__link">Hotel Day Packages</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="" class="footer-list__link">Restaurants</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="" class="footer-list__link">Fitness</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="" class="footer-list__link">Rodrigues</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-5 offset-md-1 col-lg-3 col-xl-3 offset-lg-1 offset-xl-1">
+						<h5 class="footer-title">ADDITIONAL INFORMATION</h5>
+						<ul class="footer-list">
+							<li class="footer-list__item">
+								<a href="" class="footer-list__link">About Us</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="" class="footer-list__link">Contact Us</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="" class="footer-list__link">How does it work?</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="" class="footer-list__link">Frequently Asked Questions</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="" class="footer-list__link">Deals.mu loyalty program</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="" class="footer-list__link">Promote your Business on BTP</a>
+							</li>
+						</ul>
+						<div class="footer-social">
+							<h5 class="footer-social__title">Social Network</h5>
+							<span class="icons-foter icon-facebook-circle"></span>
+							<span class="icons-foter icon-youtube-with-circle"></span>
+							<span class="icons-foter icon-circle-instagram"></span>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-5 offset-md-1 col-lg-3 col-xl-2 offset-xl-1">
+						<h5 class="footer-title">LEGAL INFORMATION</h5>
+						<ul class="footer-list">
+							<li class="footer-list__item">
+								<a href="" class="footer-list__link">Terms & Conditions</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="" class="footer-list__link">Disclaimer</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="" class="footer-list__link">Cancellation policy</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="" class="footer-list__link">Cancellation policy</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
