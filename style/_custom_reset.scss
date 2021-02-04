@@ -26,4 +26,6 @@ button {
 }
 a:hover {
   text-decoration: none;
+  color: $primary-color;
+  transition: .3s;
 }
