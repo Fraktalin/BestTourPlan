@@ -127,7 +127,8 @@
   }
   .other-packages__big-card__image {
     object-fit: cover;
-    max-width: 230px;
+    min-width: 240px;
+    height: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -140,6 +141,12 @@
     padding-bottom: 20px;
     padding-left: 20px;
   }
+  .other-packages__big-card__image {
+    min-width: 350px;
+  }
+}
+.other-packages__small-card__image {
+  width: 100%;
 }
 @media screen and (min-width: 992px) {
   .other-packages__block__new-price {
@@ -147,6 +154,9 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
+  }
+  .other-packages__big-card {
+    max-height: 457px;
   }
   .other-packages__small-card__block {
     padding-right: 21px;
@@ -178,6 +188,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .other-packages__big-card {
+    max-height: 500px;
+  }
   .other-packages__big-card__block__plain {
     padding: 0%;
     margin: 0;

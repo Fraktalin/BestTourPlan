@@ -16,15 +16,15 @@
 				<div class="header-help">
 					<div class="header-info">
 						<span class="header-info__text">Questions? Need Help?</span>
-						<a href="tel:1234561500" class="header-info__tel">Call us on (+123) 456 1500</a>
+						<a href="tel:1234561500" class="header-info__tel" aria-label="support telefon">Call us on (+123) 456 1500</a>
 					</div>
 					<div class="header-gifts">
-						<a class="header-gifts__link" href="">
-							<span class="icon-gift"></span>
+						<a class="header-gifts__link" href="/" aria-label="link gift">
+							<span class="icon-gift" aria-hidden="true"></span>
 							<span class="header-gifts__text">BTP Gift Card</span>
 						</a>
-						<a href="">
-							<span class="icon-empty-star">
+						<a href="/" aria-label="link gift">
+							<span class="icon-empty-star" aria-hidden="true">
 								<span class="header-gifts__text">Loyalty Program</span>
 							</span>
 						</a>
@@ -34,22 +34,24 @@
 			<div class="header__second-header">
 				<div class="container">
 					<div class="header-center">
-						<img class="header-center__image" src="./Images/Best_tour_plan.svg" alt="">
+						<a href="/" aria-label="home page">
+							<img loading="lazy" class="header-center__image" src="./Images/Best_tour_plan.svg" alt="main logo">
+						</a>
 						<form class="search-form" action="form">
-							<input type="text" class="search-form__input" placeholder="Search Location">
-							<button class="search-form__button">
-								<span class="icon-search"></span>
+							<input aria-label="search input" name="search" type="text" class="search-form__input" placeholder="Search Location">
+							<button aria-label="search" class="search-form__button">
+								<span class="icon-search" aria-hidden="true"></span>
 							</button>
 						</form>
 						<div class="header-center__user">
-							<div class="cart">
-								<span class="icon-shopping-cart"></span>
-								<div class="icon-shopping-cart--count">2</div>
-							</div>
-							<a class="header-center__user__link" href="">
-								<img src="./Images/Ellipse-1.jpg" alt="">
+							<a class="cart" aria-label="link cart">
+								<span class="icon-shopping-cart" aria-hidden="true"></span>
+								<div class="icon-shopping-cart--count" aria-hidden="true">2</div>
+							</a>
+							<a class="header-center__user__link" href="/" aria-label="link user profile">
+								<img loading="lazy" src="./Images/Ellipse-1.jpg" alt="avatar">
 								<span>Nathan</span>
-								<span class="icon-arrow-down"></span>
+								<span class="icon-arrow-down" aria-hidden="true"></span>
 							</a>
 						</div>
 					</div>
@@ -60,25 +62,25 @@
 					<nav class="last-header__main-nav">
 						<ul class="last-header__main-nav__list">
 							<li class="main-nav__list__item">
-								<a href="" class="main-nav__list__link">All Deals</a>
+								<a href="/" class="main-nav__list__link">All Deals</a>
 							</li>
 							<li class="main-nav__list__item">
-								<a href="" class="main-nav__list__link">Hotels</a>
+								<a href="/" class="main-nav__list__link">Hotels</a>
 							</li>
 							<li class="main-nav__list__item">
-								<a href="" class="main-nav__list__link">Activities</a>
+								<a href="/" class="main-nav__list__link">Activities</a>
 							</li>
 							<li class="main-nav__list__item">
-								<a href="" class="main-nav__list__link">Hotel Day Packages</a>
+								<a href="/" class="main-nav__list__link">Hotel Day Packages</a>
 							</li>
 							<li class="main-nav__list__item">
-								<a href="" class="main-nav__list__link">Restaurants</a>
+								<a href="/" class="main-nav__list__link">Restaurants</a>
 							</li>
 							<li class="main-nav__list__item">
-								<a href="" class="main-nav__list__link">Events</a>
+								<a href="/" class="main-nav__list__link">Events</a>
 							</li>
 							<li class="main-nav__list__item">
-								<a href="" class="main-nav__list__link">Rodrigues</a>
+								<a href="/" class="main-nav__list__link">Rodrigues</a>
 							</li>
 						</ul>
 					</nav>
@@ -88,16 +90,16 @@
 		<section class="hero-section">
 			<div class="container">
 				<div class="hero-section__path">
-					<a href="" class="hero-section__path__link">Home / </a>
-					<a href="" class="hero-section__path__link">lash Offers / </a>
-					<a href="" class="hero-section__path__link">Grand Hilton Hotel</a>
+					<a href="/" class="hero-section__path__link" aria-label="home page">Home / </a>
+					<a href="/" class="hero-section__path__link" aria-label="home page + lash offers">Flash Offers / </a>
+					<a href="/" class="hero-section__path__link" aria-label="home page + lash offers + Grand Hilton Hotel">Grand Hilton Hotel</a>
 				</div>
 			<div class="hero-section__stars">
-				<span class="icon-star"></span>
-				<span class="icon-star"></span>
-				<span class="icon-star"></span>
-				<span class="icon-star"></span>
-				<span class="icon-star"></span>
+				<span class="icon-star" aria-hidden="true"></span>
+				<span class="icon-star" aria-hidden="true"></span>
+				<span class="icon-star" aria-hidden="true"></span>
+				<span class="icon-star" aria-hidden="true"></span>
+				<span class="icon-star" aria-hidden="true"></span>
 			</div>
 			<div class="hero-section__main-title__block">
 				<div class="hero-section__title-wrap">
@@ -118,7 +120,45 @@
 			<div class="row">
 				<div class="col-xl-8 col-lg-8">
 					<div class="hero-section__slide">
-						<img class="hero-section__image" src="./Images/main-image1x.jpg" alt="">
+						<picture  class="hero-section__image">
+							<source
+								srcset="./Images/main-image1x.webp 1x,./Images/main-image2x.webp 2x"
+								type="image/webp"
+								media="(min-width: 1200px)" />
+							<source
+								srcset="./Images/main-image1x.jpg 1x,./Images/main-image2x.jpg 2x"
+								type="image/jpeg"
+								media="(min-width: 1200px)" />
+							<source
+								srcset="./Images/main-image1x75.webp 1x,./Images/main-image2x75.webp 2x"
+								type="image/webp"
+								media="(min-width: 992px)" />
+							<source
+								srcset="./Images/main-image1x75.jpg 1x,./Images/main-image2x75.jpg 2x"
+								type="image/jpeg"
+								media="(min-width: 992px)" />
+							<source
+								srcset="./Images/main-image1x50.webp 1x,./Images/main-image2x50.webp 2x"
+								type="image/webp"
+								media="(min-width: 768px)" />
+							<source
+								srcset="./Images/main-image1x50.jpg 1x,./Images/main-image2x50.jpg 2x"
+								type="image/jpeg"
+								media="(min-width: 768px)" />
+							<source srcset="Images/main-image1x50.webp 1x, Images/main-image2x50.webp 2x" type="image/webp" media="(min-width: 576px)"/><source
+								srcset="./Images/main-image1x50.jpg 1x,./Images/main-image2x50.jpg 2x"
+								type="image/jpeg"
+								media="(min-width: 576px)"/>
+							<source
+								srcset="./Images/main-image1x.webp 1x,./Images/main-image2x.webp 2x"
+								type="image/webp" />
+							<source
+								srcset="./Images/main-image1x.jpg 1x,./Images/main-image2x.jpg 2x"
+								type="image/jpeg" />
+							<img loading="lazy"
+								src="./Images/main-image1x.jpg" class="hero-section__image"
+								alt="GRAND HILTON HOTEL"
+						/></picture>
 					</div>
 				</div>
 				<div class="col-lg-4 col-xl-4">
@@ -132,11 +172,11 @@
 							<div class="text-row__col">
 								<div class="text-row__col__block">
 									<div class="text-row__col__block__elem">
-										<span class="icon-user"></span>
+										<span class="icon-user" aria-hidden="true"></span>
 										<span class="text-row__col__block--1">2 x Guests</span>
 									</div>
 									<div class="text-row__col__block__elem">
-										<span class="icon-home"></span>
+										<span class="icon-home" aria-hidden="true"></span>
 										<span class="text-row__col__block--1">1 x Room</span>
 									</div>
 								</div>
@@ -147,14 +187,15 @@
 								<span class="text-row__col-2--1">Quick Booking</span>
 							</div>
 							<div class="text-row__col">
-								<a href="tel:12100" class="link-row__col-2--1"><span class="icon-phone-call"></span>12100</a>
+								<a href="tel:12100" class="link-row__col-2--1" aria-label="tel quick booking">
+									<span class="icon-phone-call" aria-hidden="true"></span>12100</a>
 							</div>
 						</div>
 						<button class="hero-section__button">View Other Options</button>
 					</div>
 					<div class="hero-section__map"></div>
 					<div class="">
-						<iframe class="hero-section__map--block" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d617.0372617506115!2d30.522784433413875!3d50.45094749059778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf87e92dd057%3A0xa31051482bd99848!2z0JDQuSDQlNCwINCc0LDRgdGC0LXRgCAtINGA0LXQvNC-0L3RgiBpUGhvbmUsIGlQYWQsIE1hY0Jvb2sg0LIg0JrQuNC10LLQtQ!5e0!3m2!1sru!2sua!4v1612188078754!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						<iframe class="hero-section__map--block" aria-label="pin on the map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d617.0372617506115!2d30.522784433413875!3d50.45094749059778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf87e92dd057%3A0xa31051482bd99848!2z0JDQuSDQlNCwINCc0LDRgdGC0LXRgCAtINGA0LXQvNC-0L3RgiBpUGhvbmUsIGlQYWQsIE1hY0Jvb2sg0LIg0JrQuNC10LLQtQ!5e0!3m2!1sru!2sua!4v1612188078754!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 					</div>
 				</div>
 			</div>
@@ -164,25 +205,25 @@
 			<div class="container">
 				<ul class="tabs__list">
 					<li class="tabs__list__item">
-						<a href="" class="tabs__list__link tabs__list__link--active">Package Summery</a>
+						<button class="tabs__list__link tabs__list__link--active">Package Summery</button>
 					</li>
 					<li class="tabs__list__item">
-						<a href="" class="tabs__list__link tabs__list__link--nonactive">Hotel Information</a>
+						<button class="tabs__list__link tabs__list__link--nonactive">Hotel Information</button>
 					</li>
 					<li class="tabs__list__item">
-						<a href="" class="tabs__list__link tabs__list__link--nonactive">Rooms</a>
+						<button class="tabs__list__link tabs__list__link--nonactive">Rooms</button>
 					</li>
 					<li class="tabs__list__item">
-						<a href="" class="tabs__list__link tabs__list__link--nonactive">Facilities & Activities</a>
+						<button class="tabs__list__link tabs__list__link--nonactive">Facilities & Activities</button>
 					</li>
 					<li class="tabs__list__item">
-						<a href="" class="tabs__list__link tabs__list__link--nonactive">Dining & Entertainment</a>
+						<button class="tabs__list__link tabs__list__link--nonactive">Dining & Entertainment</button>
 					</li>
 					<li class="tabs__list__item">
-						<a href="" class="tabs__list__link tabs__list__link--nonactive">Reviews </a>
+						<button class="tabs__list__link tabs__list__link--nonactive">Reviews </button>
 					</li>
 					<li class="tabs__list__item">
-						<a href="" class="tabs__list__link tabs__list__link--nonactive">Questions & Answers</a>
+						<button class="tabs__list__link tabs__list__link--nonactive">Questions & Answers</button>
 					</li>
 				</ul>
 				<h2 class="tabs__title">Package Summery</h2>
@@ -220,10 +261,10 @@
 									<ul class="tabs__lists__default-list flex-column">
 										<li class="tabs__lists__default-list__item">Room as per selection</li>
 										<li class="tabs__lists__default-list__item">Half Board or All Inclusive Meal Plan</li>
-										<li class="tabs__lists__default-list__item">Complimentary Land & Water activities</li>
+										<li class="tabs__lists__default-list__item">Free Secure Parking</li>
 										<li class="tabs__lists__default-list__item">Child Under 11 years old stays free</li>
 										<li class="tabs__lists__default-list__item">Free Wi-Fi</li>
-										<li class="tabs__lists__default-list__item">Free Secure Parking</li>
+										<li class="tabs__lists__default-list__item">Complimentary Land & Water activities</li>
 									</ul>
 								</li>
 								<li class="col-lg-4 tabs__lists__big-list__item">
@@ -293,14 +334,83 @@
 					<div class="col-sm-12 col-md-12 col-xl-8 col-lg-8">
 						<div class="other-packages__big-card">
 							<button class="big-card__button-offer">Flash Offer</button>
-							<img class="other-packages__big-card__image" src="./Images/other-packages-image1-1x.jpg" alt="">
+							<picture>
+								<source
+									srcset="./Images/other-packages-image1-1x.webp 1x,
+										./Images/other-packages-image1-2x.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 1200px)" />
+								<source
+									srcset="
+										./Images/other-packages-image1-1x.jpg 1x,
+										./Images/other-packages-image1-2x.jpg 2x
+									"
+									type="image/jpeg"
+									media="(min-width: 1200px)" />
+								<source
+									srcset="
+										./Images/other-packages-image1-1x.webp 1x,
+										./Images/other-packages-image1-2x.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 992px)" />
+								<source
+									srcset="
+										./Images/other-packages-image1-1x.jpg 1x,
+										./Images/other-packages-image1-2x.jpg 2x
+									"
+									type="image/jpeg"
+									media="(min-width: 992px)" />
+								<source
+									srcset="
+										./Images/other-packages-image1-1x75.webp 1x,
+										./Images/other-packages-image1-2x75.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 768px)" />
+								<source
+									srcset="
+										./Images/other-packages-image1-2x75.jpg 1x,
+										./Images/other-packages-image1-2x75.jpg 2x
+									"
+									type="image/jpeg"
+									media="(min-width: 768px)" />
+								<source
+									srcset="
+										./Images/other-packages-image1-1x75.webp 1x,
+										./Images/other-packages-image1-2x75.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 576px)" />
+								<source
+									srcset="
+										./Images/other-packages-image1-2x75.jpg 1x,
+										./Images/other-packages-image1-2x75.jpg 2x
+									"
+									type="image/jpeg"
+									media="(min-width: 576px)" />
+								<source srcset="
+										Images/other-packages-image1-1x.webp 1x,
+										Images/other-packages-image1-2x.webp 2x
+									"
+									type="image/webp" />
+								<source
+									srcset="Images/other-packages-image1-1x.jpg 1x,
+										Images/other-packages-image1-2x.jpg 2x
+									"
+									type="image/jpeg" />
+								<img loading="lazy"
+								src="./Images/other-packages-image1-1x.jpg" class="other-packages__big-card__image" 
+									alt="Hotel Blue Haven"
+							/></picture>
 							<div class="other-packages__big-card__block">
 								<div class="other-packages__big-card__block__stars">
-									<span class="icon-star"></span>
-									<span class="icon-star"></span>
-									<span class="icon-star"></span>
-									<span class="icon-star"></span>
-									<span class="icon-star"></span>
+									<span class="icon-star" aria-hidden="true"></span>
+									<span class="icon-star" aria-hidden="true"></span>
+									<span class="icon-star" aria-hidden="true"></span>
+									<span class="icon-star" aria-hidden="true"></span>
+									<span class="icon-star" aria-hidden="true"></span>
 								</div>
 								<span class="other-packages__block__title">Hotel Blue Haven</span>
 								<p class="other-packages__big-card__block__plain">
@@ -322,7 +432,68 @@
 					<div class="col-md-12 col-lg-4 col-xl-4">
 						<div class="other-packages__small-card">
 							<button class="big-card__button-offer">Flash Offer</button>
-							<img src="./Images/other-packages-image2-1x.jpg" alt="">
+							<picture>
+								<source
+									srcset="
+										./Images/other-packages-image2-1x.webp 1x,
+										./Images/other-packages-image2-2x.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 1200px)" />
+								<source
+									srcset="
+										./Images/other-packages-image2-1x.jpg 1x,
+										./Images/other-packages-image2-2x.jpg 2x
+									"
+									type="image/jpeg"
+									media="(min-width: 1200px)" />
+								<source
+									srcset="
+										./Images/other-packages-image2-1x.webp 1x,
+										./Images/other-packages-image2-2x.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 992px)" />
+								<source
+									srcset="
+										./Images/other-packages-image2-1x.jpg 1x,
+										./Images/other-packages-image2-2x.jpg 2x
+									"
+									type="image/jpeg"
+									media="(min-width: 992px)" />
+								<source
+									srcset="
+										./Images/other-packages-image2-1x.webp 1x,
+										./Images/other-packages-image2-2x.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 768px)" />
+								<source
+									srcset="./Images/other-packages-image2-2x.jpg 1x,
+													./Images/other-packages-image2-2x.jpg 2x"
+									type="image/jpeg"
+									media="(min-width: 768px)" />
+								<source
+									srcset="./Images/other-packages-image2-1x75.webp 1x,
+													./Images/other-packages-image2-2x75.webp 2x"
+									type="image/webp"
+									media="(min-width: 576px)" />
+								<source
+									srcset="./Images/other-packages-image2-2x75.jpg 1x,
+													./Images/other-packages-image2-2x75.jpg 2x"
+									type="image/jpeg"
+									media="(min-width: 576px)" />
+								<source
+									srcset="Images/other-packages-image2-1x.webp 1x,
+													Images/other-packages-image2-2x.webp 2x"
+									type="image/webp" />
+								<source
+									srcset="Images/other-packages-image2-1x.jpg 1x,
+													Images/other-packages-image2-2x.jpg 2x"
+									type="image/jpeg"/>
+								<img loading="lazy"
+								src="./Images/other-packages-image2-1x.jpg" class="other-packages__small-card__image"
+									alt="LUX* Belle Mare"/></picture>
 							<div class="other-packages__small-card__block">
 								<span class="other-packages__block__title">LUX* Belle Mare</span>
 								<ul class="other-packages__block__icons">
@@ -343,7 +514,79 @@
 					<div class="col-md-12 col-lg-4 col-xl-4">
 						<div class="other-packages__small-card">
 							<button class="big-card__button-offer">Flash Offer</button>
-							<img src="./Images/other-packages-image3-1x.jpg" alt="">
+							<picture>
+								<source
+									srcset="
+										./Images/other-packages-image3-1x.webp 1x,
+										./Images/other-packages-image3-2x.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 1200px)" />
+								<source
+									srcset="
+										./Images/other-packages-image3-1x.jpg 1x,
+										./Images/other-packages-image3-2x.jpg 2x
+									"
+									type="image/jpeg"
+									media="(min-width: 1200px)" />
+								<source
+									srcset="
+										./Images/other-packages-image3-1x.webp 1x,
+										./Images/other-packages-image3-2x.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 992px)" />
+								<source
+									srcset="
+										./Images/other-packages-image3-1x.jpg 1x,
+										./Images/other-packages-image3-2x.jpg 2x
+									"
+									type="image/jpeg"
+									media="(min-width: 992px)" />
+								<source
+									srcset="
+										./Images/other-packages-image3-1x.webp 1x,
+										./Images/other-packages-image3-2x.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 768px)" />
+								<source
+									srcset="
+										./Images/other-packages-image3-2x.jpg 1x,
+										./Images/other-packages-image3-2x.jpg 2x
+									"
+									type="image/jpeg"
+									media="(min-width: 768px)" />
+								<source
+									srcset="
+										./Images/other-packages-image3-1x75.webp 1x,
+										./Images/other-packages-image3-2x75.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 576px)" />
+								<source
+									srcset="
+										./Images/other-packages-image3-2x75.jpg 1x,
+										./Images/other-packages-image3-2x75.jpg 2x
+									"
+									type="image/jpeg"
+									media="(min-width: 576px)" />
+								<source
+									srcset="
+										./Images/other-packages-image3-1x.webp 1x,
+										./Images/other-packages-image3-2x.webp 2x
+									"
+									type="image/webp" />
+								<source
+									srcset="
+										./Images/other-packages-image3-1x.jpg 1x,
+										./Images/other-packages-image3-2x.jpg 2x
+									"
+									type="image/jpeg" />
+								<img loading="lazy"
+								src="./Images/other-packages-image3-1x.jpg" class="other-packages__small-card__image"
+									alt="White Palace"
+							/></picture>
 							<div class="other-packages__small-card__block">
 								<span class="other-packages__block__title">White Palace</span>
 								<ul class="other-packages__block__icons">
@@ -362,7 +605,79 @@
 					<div class="col-md-12 col-lg-4 col-xl-4">
 						<div class="other-packages__small-card">
 							<button class="big-card__button-offer">Flash Offer</button>
-							<img src="./Images/other-packages-image4-1x.jpg" alt="">
+							<picture>
+								<source
+									srcset="
+										./Images/other-packages-image4-1x.webp 1x,
+										./Images/other-packages-image4-2x.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 1200px)" />
+								<source
+									srcset="
+										./Images/other-packages-image4-1x.jpg 1x,
+										./Images/other-packages-image4-2x.jpg 2x
+									"
+									type="image/jpeg"
+									media="(min-width: 1200px)" />
+								<source
+									srcset="
+										./Images/other-packages-image4-1x.webp 1x,
+										./Images/other-packages-image4-2x.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 992px)" />
+								<source
+									srcset="
+										./Images/other-packages-image4-1x.jpg 1x,
+										./Images/other-packages-image4-2x.jpg 2x
+									"
+									type="image/jpeg"
+									media="(min-width: 992px)" />
+								<source
+									srcset="
+										./Images/other-packages-image4-1x.webp 1x,
+										./Images/other-packages-image4-2x.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 768px)" />
+								<source
+									srcset="
+										./Images/other-packages-image4-2x.jpg 1x,
+										./Images/other-packages-image4-2x.jpg 2x
+									"
+									type="image/jpeg"
+									media="(min-width: 768px)" />
+								<source
+									srcset="
+										./Images/other-packages-image4-1x75.webp 1x,
+										./Images/other-packages-image4-2x75.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 576px)" />
+								<source
+									srcset="
+										./Images/other-packages-image4-2x75.jpg 1x,
+										./Images/other-packages-image4-2x75.jpg 2x
+									"
+									type="image/jpeg"
+									media="(min-width: 576px)" />
+								<source
+									srcset="
+										./Images/other-packages-image4-1x.webp 1x,
+										./Images/other-packages-image4-2x.webp 2x
+									"
+									type="image/webp" />
+								<source
+									srcset="
+										./Images/other-packages-image4-1x.jpg 1x,
+										./Images/other-packages-image4-2x.jpg 2x
+									"
+									type="image/jpeg" />
+								<img loading="lazy"
+								src="./Images/other-packages-image4-1x.jpg" class="other-packages__small-card__image"
+									alt="Luxury Place"
+							/></picture>
 							<div class="other-packages__small-card__block">
 								<span class="other-packages__block__title">Luxury Place</span>
 								<ul class="other-packages__block__icons">
@@ -381,7 +696,79 @@
 					<div class="col-md-12 col-lg-4 col-xl-4">
 						<div class="other-packages__small-card">
 							<button class="big-card__button-offer">Flash Offer</button>
-							<img src="./Images/other-packages-image5-1x.jpg" alt="">
+							<picture>
+								<source
+									srcset="
+										./Images/other-packages-image5-1x.webp 1x,
+										./Images/other-packages-image5-2x.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 1200px)" />
+								<source
+									srcset="
+										./Images/other-packages-image5-1x.jpg 1x,
+										./Images/other-packages-image5-2x.jpg 2x
+									"
+									type="image/jpeg"
+									media="(min-width: 1200px)" />
+								<source
+									srcset="
+										./Images/other-packages-image5-1x.webp 1x,
+										./Images/other-packages-image5-2x.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 992px)" />
+								<source
+									srcset="
+										./Images/other-packages-image5-1x.jpg 1x,
+										./Images/other-packages-image5-2x.jpg 2x
+									"
+									type="image/jpeg"
+									media="(min-width: 992px)" />
+								<source
+									srcset="
+										./Images/other-packages-image5-1x.webp 1x,
+										./Images/other-packages-image5-2x.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 768px)" />
+								<source
+									srcset="
+										./Images/other-packages-image5-2x.jpg 1x,
+										./Images/other-packages-image5-2x.jpg 2x
+									"
+									type="image/jpeg"
+									media="(min-width: 768px)" />
+								<source
+									srcset="
+										./Images/other-packages-image5-1x75.webp 1x,
+										./Images/other-packages-image5-2x75.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 576px)" />
+								<source
+									srcset="
+										./Images/other-packages-image5-2x75.jpg 1x,
+										./Images/other-packages-image5-2x75.jpg 2x
+									"
+									type="image/jpeg"
+									media="(min-width: 576px)" />
+								<source
+									srcset="
+										./Images/other-packages-image5-1x.webp 1x,
+										./Images/other-packages-image5-2x.webp 2x
+									"
+									type="image/webp" />
+								<source
+									srcset="
+										./Images/other-packages-image5-1x.jpg 1x,
+										./Images/other-packages-image5-2x.jpg 2x
+									"
+									type="image/jpeg" />
+								<img loading="lazy"
+								src="./Images/other-packages-image5-1x.jpg" class="other-packages__small-card__image"
+									alt="Hotel Five Star"
+							/></picture>
 							<div class="other-packages__small-card__block">
 								<span class="other-packages__block__title">Hotel Five Star</span>
 								<ul class="other-packages__block__icons">
@@ -404,24 +791,24 @@
 			<div class="container">
 				<h4 class="slider__title">What people thinks about us</h4>
 				<div class="slider__part">
-					<button class="slider__arrow">
-						<span class="icon-arrow-left"></span>
+					<button aria-label="previous" class="slider__arrow">
+						<span class="icon-arrow-left" aria-hidden="true"></span>
 					</button>
 					<div class="slider__block">
-						<img class="slider__photo" src="./Images/avatar2.png" alt="">
+						<img loading="lazy" class="slider__photo" src="./Images/avatar2.png" alt="avatar">
 						<span class="slider__name">Megan Fox</span>
 						<span class="slider__date">Stayed 18 Nov, 2019</span>
 						<div class="hero-section__stars">
-							<span class="icon-star"></span>
-							<span class="icon-star"></span>
-							<span class="icon-star"></span>
-							<span class="icon-star"></span>
-							<span class="icon-star"></span>
+							<span class="icon-star" aria-hidden="true"></span>
+							<span class="icon-star" aria-hidden="true"></span>
+							<span class="icon-star" aria-hidden="true"></span>
+							<span class="icon-star" aria-hidden="true"></span>
+							<span class="icon-star" aria-hidden="true"></span>
 						</div>
 						<p class="slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. </p>
 					</div>
-					<button class="slider__arrow">
-						<span class="icon-arrow-right"></span>
+					<button aria-label="next" class="slider__arrow">
+						<span class="icon-arrow-right" aria-hidden="true"></span>
 					</button>
 				</div>
 			</div>
@@ -435,7 +822,7 @@
 							<h4 class="subscribe__block__newsletter">Newsletter</h4>
 						</div>
 						<form class="search-form--subscribe" action="form">
-							<input type="text" class="search-form__input search-form__input--subscribe" placeholder="Your email address">
+							<input aria-label="enter your email address" name="user_email" type="text" class="search-form__input search-form__input--subscribe" placeholder="Your email address">
 							<button class="search-form__button search-form__button--subscribe">
 								<span class="">Send</span>
 							</button>
@@ -450,7 +837,7 @@
 				<div class="row">
 					<div class="other-activities__block col-sm-6 col-md-6 col-lg-6 col-xl-3">
 						<div class="image-wrapper">
-							<img class="other-activities__image" src="./Images/other-activities1-1x.jpg" alt="">
+							<img loading="lazy" class="other-activities__image" src="./Images/other-activities1-1x.jpg" alt="people drinks">
 						</div>
 						<div class="other-activities__block-elements">
 							<span class="block__text">The curious corner of chamarel</span>
@@ -459,7 +846,7 @@
 					</div>
 					<div class="other-activities__block col-sm-6 col-md-6 col-lg-6 col-xl-3">
 						<div class="image-wrapper">
-							<img class="other-activities__image" src="./Images/other-activities2-1x.jpg" alt="">
+							<img loading="lazy" class="other-activities__image" src="./Images/other-activities2-1x.jpg" alt="man playing golf">
 						</div>
 						<div class="other-activities__block-elements">
 							<span class="block__text">Gymkhana club golf course</span>
@@ -468,7 +855,7 @@
 					</div>
 					<div class="other-activities__block col-sm-6 col-md-6 col-lg-6 col-xl-3">
 						<div class="image-wrapper">
-							<img class="other-activities__image" src="./Images/other-activities3-1x.jpg" alt="">
+							<img loading="lazy" class="other-activities__image" src="./Images/other-activities3-1x.jpg" alt="waterfall">
 						</div>
 						<div class="other-activities__block-elements">
 							<span class="block__text">Tamarind falls hikingtrip - full day</span>
@@ -477,7 +864,7 @@
 					</div>
 					<div class="other-activities__block col-sm-6 col-md-6 col-lg-6 col-xl-3">
 						<div class="image-wrapper">
-							<img class="other-activities__image" src="./Images/other-activities4-1x.jpg" alt="">
+							<img loading="lazy" class="other-activities__image" src="./Images/other-activities4-1x.jpg" alt="boat on the sea">
 						</div>
 						<div class="other-activities__block-elements">
 							<span class="block__text">The blue marine discovery quest</span>
@@ -491,34 +878,34 @@
 			<div class="container">
 				<div class="footer-top row">
 					<div class="col-sm-6 col-md-5 offset-md-1 col-lg-2 offset-xl-0 col-xl-2">
-						<img class="footer-logo" src="./Images/Best-tour-plan-footer.svg" alt="">
+						<img loading="lazy" class="footer-logo" src="./Images/Best-tour-plan-footer.svg" alt="main logo">
 					</div>
 					<div class="col-sm-6 col-md-5 offset-md-1 col-lg-2 col-xl-2 offset-lg-1 offset-xl-1">
 						<h5 class="footer-title">ALL CATEGORIES</h5>
 						<ul class="footer-list">
 							<li class="footer-list__item">
-								<a href="" class="footer-list__link">All Deals</a>
+								<a href="/" class="footer-list__link">All Deals</a>
 							</li>
 							<li class="footer-list__item">
-								<a href="" class="footer-list__link">Hotels</a>
+								<a href="/" class="footer-list__link">Hotels</a>
 							</li>
 							<li class="footer-list__item">
-								<a href="" class="footer-list__link">Activities</a>
+								<a href="/" class="footer-list__link">Activities</a>
 							</li>
 							<li class="footer-list__item">
-								<a href="" class="footer-list__link">Spa Packages</a>
+								<a href="/" class="footer-list__link">Spa Packages</a>
 							</li>
 							<li class="footer-list__item">
-								<a href="" class="footer-list__link">Hotel Day Packages</a>
+								<a href="/" class="footer-list__link">Hotel Day Packages</a>
 							</li>
 							<li class="footer-list__item">
-								<a href="" class="footer-list__link">Restaurants</a>
+								<a href="/" class="footer-list__link">Restaurants</a>
 							</li>
 							<li class="footer-list__item">
-								<a href="" class="footer-list__link">Fitness</a>
+								<a href="/" class="footer-list__link">Fitness</a>
 							</li>
 							<li class="footer-list__item">
-								<a href="" class="footer-list__link">Rodrigues</a>
+								<a href="/" class="footer-list__link">Rodrigues</a>
 							</li>
 						</ul>
 					</div>
@@ -526,34 +913,34 @@
 						<h5 class="footer-title">ADDITIONAL INFORMATION</h5>
 						<ul class="footer-list">
 							<li class="footer-list__item">
-								<a href="" class="footer-list__link">About Us</a>
+								<a href="/" class="footer-list__link">About Us</a>
 							</li>
 							<li class="footer-list__item">
-								<a href="" class="footer-list__link">Contact Us</a>
+								<a href="/" class="footer-list__link">Contact Us</a>
 							</li>
 							<li class="footer-list__item">
-								<a href="" class="footer-list__link">How does it work?</a>
+								<a href="/" class="footer-list__link">How does it work?</a>
 							</li>
 							<li class="footer-list__item">
-								<a href="" class="footer-list__link">Frequently Asked Questions</a>
+								<a href="/" class="footer-list__link">Frequently Asked Questions</a>
 							</li>
 							<li class="footer-list__item">
-								<a href="" class="footer-list__link">Deals.mu loyalty program</a>
+								<a href="/" class="footer-list__link">Deals.mu loyalty program</a>
 							</li>
 							<li class="footer-list__item">
-								<a href="" class="footer-list__link">Promote your Business on BTP</a>
+								<a href="/" class="footer-list__link">Promote your Business on BTP</a>
 							</li>
 						</ul>
 						<div class="footer-social">
 							<h5 class="footer-social__title">Social Network</h5>
-							<a href="" class="footer-social__link">
-								<span class="icons-foter icon-facebook-circle"></span>
+							<a href="/" aria-label="facebook link" class="footer-social__link">
+								<span class="icons-foter icon-facebook-circle" aria-hidden="true"></span>
 							</a>
-							<a href="" class="footer-social__link">
-								<span class="icons-foter icon-youtube-with-circle"></span>
+							<a href="/" aria-label="youtube link" class="footer-social__link">
+								<span class="icons-foter icon-youtube-with-circle" aria-hidden="true"></span>
 							</a>
-							<a href="" class="footer-social__link">
-								<span class="icons-foter icon-circle-instagram"></span>
+							<a href="/" aria-label="instagram link" class="footer-social__link">
+								<span class="icons-foter icon-circle-instagram" aria-hidden="true"></span>
 							</a>
 						</div>
 					</div>
@@ -561,16 +948,16 @@
 						<h5 class="footer-title">LEGAL INFORMATION</h5>
 						<ul class="footer-list">
 							<li class="footer-list__item">
-								<a href="" class="footer-list__link">Terms & Conditions</a>
+								<a href="/" class="footer-list__link">Terms & Conditions</a>
 							</li>
 							<li class="footer-list__item">
-								<a href="" class="footer-list__link">Disclaimer</a>
+								<a href="/" class="footer-list__link">Disclaimer</a>
 							</li>
 							<li class="footer-list__item">
-								<a href="" class="footer-list__link">Cancellation policy</a>
+								<a href="/" class="footer-list__link">Cancellation policy</a>
 							</li>
 							<li class="footer-list__item">
-								<a href="" class="footer-list__link">Cancellation policy</a>
+								<a href="/" class="footer-list__link">Cancellation policy</a>
 							</li>
 						</ul>
 					</div>
@@ -581,24 +968,24 @@
 						<span class="footer-plain-text">Feel free to contact us by phone, email or by our contact form</span>
 						<div class="footer-about">
 							<div class="footer-about__location">
-								<span class="icon-map-pin footer-icons"></span>
+								<span class="icon-map-pin footer-icons" aria-hidden="true"></span>
 								<span class="footer-plain-text">9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</span>
 							</div>
 							<div class="footer-about__phone">
 								<div class="footer-about__block-phone">
-									<span class="icon-footer-phone-call footer-icons footer-icons--phone"></span>
-									<span class="footer-plain-text">Tel (business hours) :</span> <a class="footer-plain__link" href="tel:2691500">269 1500</a> 
+									<span class="icon-footer-phone-call footer-icons footer-icons--phone" aria-hidden="true"></span>
+									<span class="footer-plain-text">Tel (business hours) :</span> <a class="footer-plain__link" aria-label="telefon support" href="tel:2691500">269 1500</a> 
 								</div>
 								<div class="footer-about__block-phone">
-									<span class="footer-plain-text footer-plain-text--second">Tel (hotline) Monday - Saturday:</span><a class="footer-plain__link" href="tel:52566138">52-56-61-38</a><span class="footer-plain-text"> (08:00 am – 20:00 pm)</span>
+									<span class="footer-plain-text footer-plain-text--second">Tel (hotline) Monday - Saturday:</span><a class="footer-plain__link" aria-label="telefon support" href="tel:52566138">52-56-61-38</a><span class="footer-plain-text"> (08:00 am – 20:00 pm)</span>
 								</div>
 								<div class="footer-about__block-phone">
-									<span class="footer-plain-text footer-plain-text--second">Tel (hotline) Sunday:</span><a class="footer-plain__link" href="tel:52566138">52-56-61-38</a><span class="footer-plain-text"> (08:00 am – 14:00 pm)</span>
+									<span class="footer-plain-text footer-plain-text--second">Tel (hotline) Sunday:</span><a class="footer-plain__link" aria-label="telefon support" href="tel:52566138">52-56-61-38</a><span class="footer-plain-text"> (08:00 am – 14:00 pm)</span>
 								</div>
 							</div>
 							<div class="footer-about__mail">
-								<span class="icon-email footer-icons"></span>
-								<a href="mailto:cherly.lawson@example.com"  class="footer-plain-text">cherly.lawson@example.com</a>
+								<span class="icon-email footer-icons" aria-hidden="true"></span>
+								<a href="mailto:cherly.lawson@example.com"  class="footer-plain-text" aria-label="email support">cherly.lawson@example.com</a>
 							</div>
 						</div>
 					</div>
@@ -606,13 +993,13 @@
 						<h5 class="footer-title">Send us a message</h5>
 						<form class="row" action="form">
 							<div class="input-wrap col-lg-6">
-								<input class="footer-input" type="text" placeholder="Your Full Name*">
+								<input name="user_name" aria-label="enter your name" class="footer-input" type="text" placeholder="Your Full Name*">
 							</div>
 							<div class="input-wrap col-lg-6">
-								<input class="footer-input" type="text" placeholder="Phone Number*">
+								<input name="user_phone" aria-label="enter phone number" class="footer-input" type="text" placeholder="Phone Number*">
 							</div>
 								<div class="input-wrap col-lg-12">
-									<textarea class="footer-textarea" name="message" id="1" cols="30" rows="4" placeholder="Message"></textarea>
+									<textarea aria-label="enter your message" class="footer-textarea" name="message" id="1" cols="30" rows="4" placeholder="Message"></textarea>
 									<div class="footer-form__button">
 										<button class="form-button">Send</button>
 										<span class="form-text">* Required Fields</span>
@@ -622,11 +1009,11 @@
 					</div>
 				</div>
 				<div class="footer-bottom">
-					<img class="pay-method" src="./Images/required-fields.jpg" alt="">
+					<img loading="lazy" class="pay-method" src="./Images/required-fields.jpg" alt="pay method">
 					<div class="footer-disclaimer">
-						<a class="footer-disclaimer__link" href="">Disclaimer</a>
-						<a class="footer-disclaimer__link" href="">Conditions of use</a>
-						<a class="footer-disclaimer__link" href="">Cancellation policy</a>
+						<a class="footer-disclaimer__link"  aria-label="disclaimer" href="/">Disclaimer</a>
+						<a class="footer-disclaimer__link" aria-label="conditions of use" href="/">Conditions of use</a>
+						<a class="footer-disclaimer__link" aria-label="cancellation policy" href="/">Cancellation policy</a>
 					</div>
 				</div>
 			</div>

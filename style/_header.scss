@@ -22,6 +22,9 @@
   font-size: 10px;
   line-height: 13px;
   color: $primary-text-color;
+  &:hover {
+    color: $primary-color;
+  }
 }
 .header-gifts {
   display: flex;
@@ -44,6 +47,7 @@
   }
 }
 .header-center {
+  align-items: center;
   display: flex;
   flex-direction: column;
   padding-top: 40px;

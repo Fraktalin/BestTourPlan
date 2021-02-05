@@ -1,13 +1,18 @@
 button {
 	color: #fff;
 	transition: .3s;
+	&:focus {
+		outline-color: #336cad;
+	}
+	&:active {
+	background: #be0f30;
+	}
 }
 button:hover {
-	background: #be0f30;
 	transform: scalex(1.05);
 }
 .slider__arrow {
-  background: transparent;
+	background: transparent;
 }
 .block__button {
   border-radius: 4px;

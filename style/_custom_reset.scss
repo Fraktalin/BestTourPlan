@@ -18,6 +18,12 @@ ul {
 a {
   color: $primary-text-color;
   text-decoration: none;
+  &:focus {
+    outline-color: #dd3b59;
+  }
+  &:active {
+    color: $primary-color;
+  }
 }
 button {
 	cursor: pointer;

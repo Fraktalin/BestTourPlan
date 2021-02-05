@@ -193,11 +193,21 @@
   margin-right: auto;
 }
 .tabs__list__link--nonactive {
+  color: #333;
   transition: .3s all;
   padding-bottom: 14px;
   border-bottom: 4px solid transparent;
   &:hover {
     color: #d8415d;
     border-bottom: 4px solid #d8415d;
+  }
+}
+.tabs__list__link {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  background: transparent;
+  &:hover{
+    background: transparent;
   }
 }
